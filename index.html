@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/wdd230_final/styles/medium.css"/>
     <link rel="stylesheet" href="/wdd230_final/styles/bountiful.css"/>
     <link rel="stylesheet" href="/wdd230_final/styles/large.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,32 +14,109 @@
     <title>Bountiful Foods</title>
 </head>
 <body>
-<header> 
-    <img class="logo" src="/wdd230_final/images/bountiful logo.png" alt="bountifull foods logo">
-    <input type="checkbox" class="nav-toggle" id="nav-toggle">
-        <nav class="navbar"> 
-          <ul>
-            <li><a href ="/wdd230_final/index.html">Home</a></li>
-            <li><a href ="#">About Us</a></li>
-            <li><a href ="#">Contact</a></li>
-           </ul>
-        </nav>
-    <label for="nav-toggle" class="toggle-label"><span></span></label>
+<header>
+  <div class="main-header">
+      <nav>
+          <button id="hamburgerBtn"> 
+              <span>&#9776;</span> 
+              <span>X</span> 
+          </button>
+          <ul id="primaryNav">
+              <li><a href="/wdd230_final/index.html">Home</a></li>
+              <li><a href="/wdd230_final/fresh.html">Fresh</a></li>
+              <li><a href="/wdd230_final/aboutus.html">Contact Us</a></li>
+          </ul>
+      </nav>
+      <div class="headings">
+        <h1>Bountiful Foods</h1>
+    </div>
+      <div class="logo">
+
+          <a href="/wdd230_final/index.html"><img class="logo-img" src="/wdd230_final/images/bountiful logo.png" alt="logo"></a>
+          
+      </div>
+  </div>
+  <span id="date"></span>
 </header>
+<div class="hero-banner">
+  <section class="banner">
+    <h1>Welcome to Bountiful Foods</h1>
+    <h3>Take a look around to learn what we have to offer!</h3>
+
+    <img src="/wdd230_final/images/produce.jpeg" alt="fruit stand">
+  </section>
+</div>
+
+
 <main>
-   <section class="hero-msg">
-        <h2>Bountiful Foods</h2>
-   </section>
+  <section class="square1">
+        <h2>Carlsbad California</h2>
+        <p>Carlsbad is only 35 miles up the coast from San Diego. This costal town is home to over 115,000 people. The average temperature during peak growing season ranges from 63-68 degrees.
+            Locals and tourist alike frequent the several fresh fruit and produce farms including Bountiful Foods. </p>
+        <img src="/wdd230_final/images/carlsbad.jpeg" alt="fruit stand">
+  </section>
+  <section class="square2">
+    <h2>Make your own fruit drink</h2>
+    <p>Design and order your own fruit smoothie or drink made from our fresh produce! </p>
+    
+    <div class="button">
+        <span class="button_circle">
+        </span>
+        <a href="/wdd230_final/fresh.html" class="button_su_inner">
+        <span class="button_text_container">
+            Click Here!
+        </span>
+        </a>
+    </div>
+      <img src="/wdd230_final/images/fruit_drink.jpeg" alt="fruit drink">
+  </section>
+
+  <section class="square3">
+    <section class="weather">
+      <h3>Weather</h3>
+      <figure>
+        <div class="weather">
+          <img id="weather-icon" src="#" alt="#">
+          <p><span id="current-temp"></span> &deg;F</p>
+        </div>
+        <figcaption></figcaption>
+      </figure>
+    <div>
+      <h2>Carlsbad, CA</h2>
+      <p><strong>Wind Speed: </strong><span id="windspeed"></span></p>
+      <p><strong>Wind Chill: </strong><span id="windChillFahrenheit"></span></p>
+    </div>
+  </section>
+  </section>
+ 
+  <section class="square4">
+    <h2>Follow us to stay up to date on all things Bountiful Foods!</h2>
+    <div class="social-media">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-youtube"></a>
+
+    </div>
+  </section>
+
+
+
 </main>
 
-      <footer>
-        <div class="footer"></div>
+<footer>
+  <div class="footer"></div>
       
-        <div class="copyright">
-            <p>Copyright <script>document.write(new Date().getFullYear());</script> Bountiful Foods - All Rights Reserved.</p>
-        </div>
+    <div class="copyright">
+      <p>Copyright <script>document.write(new Date().getFullYear());</script> Bountiful Foods - All Rights Reserved.</p>
+      <p>last modified:</p>
+      <p id="demo"></p>
+      <script>
+        let text = document.lastModified;
+        document.getElementById("demo").innerHTML = text;
+        </script>
     </div>
-    </footer>
+  </div>
+</footer>
     
 </body>
 <script src="/wdd230_final/scripts/bountiful.js"></script>
