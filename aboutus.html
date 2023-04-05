@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/wdd230_final/styles/medium.css"/>
+    <link rel="stylesheet" href="/wdd230_final/styles/bountiful.css"/>
+    <link rel="stylesheet" href="/wdd230_final/styles/large.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<body>
+    <header>
+        <div class="main-header">
+            <nav>
+                <button id="hamburgerBtn"> 
+                    <span>&#9776;</span> 
+                    <span>X</span> 
+                </button>
+                <ul id="primaryNav">
+                    <li><a href="/wdd230_final/index.html">Home</a></li>
+                    <li><a href="/wdd230_final/fresh.html">Fresh</a></li>
+                    <li><a href="/wdd230_final/aboutus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="headings">
+              <h1>Bountiful Foods</h1>
+          </div>
+            <div class="logo">
+      
+                <a href="/wdd230_final/index.html"><img class="logo-img" src="/wdd230_final/images/bountiful logo.png" alt="logo"></a>
+                
+            </div>
+           
+            
+            
+        </div>
+        <span id="date"></span>
+      </header>
+    <main>
+        <section class="info">
+            <h2>About Us</h2>
+            <p>Bountiful Foods was established in 1985 here in Carlsbad California. The idea to begin a local produce farm came from the idea that everyone should have access to real fresh food. Bountiful Foods works closely with local farmers to deliver to distributors and anyone who wants healthy options. Let our farms be considered your backyard garden. We have a store front location here, and also deliver from LA to San Diego. </p>
+        </section>
+        <section class="info">
+            <h2>Contact Info</h2>
+            <p>Here's how to easily get in contact with us!</p>
+            <p class="contacts">Phone:(234)-555-7890</p>
+            <a class="contacts" href="#">Email: BountifulFoods@gmail.com</a>
+        </section>
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7827.519182258613!2d-117.33227021550375!3d33.13501788404117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc725822465331%3A0x981229ab19c0bde!2sCarlsbad%20Strawberry%20Company!5e0!3m2!1sen!2sus!4v1680730068428!5m2!1sen!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+      
+
+      <footer>
+        <div class="footer"></div>
+            
+          <div class="copyright">
+            <p>Copyright <script>document.write(new Date().getFullYear());</script> Bountiful Foods - All Rights Reserved.</p>
+            <p>last modified:</p>
+      <p id="demo"></p>
+      <script>
+        let text = document.lastModified;
+        document.getElementById("demo").innerHTML = text;
+        </script>
+          </div>
+        </div>
+      </footer>
+</body>
+<script src="/wdd230_final/scripts/bountiful.js"></script>
+</html>
